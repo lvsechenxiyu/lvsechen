@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<title>拖拽</title>
+	<style type="text/css">
+		#box{
+			width: 100px;
+			height: 300px;
+			background: blue;
+			position: absolute;
+		}
+		#div{
+			width: 200px;
+			height: 200px;
+			background: red;
+			position: absolute;
+			left: 200px;
+		}
+	</style>
+</head>
+<body>
+	<div id="box"></div>
+	<div id="div"></div>
+</body>
+<script type="text/javascript" src="drag.js" ></script>
+<script type="text/javascript" src="jctz.js" ></script>
+<script type="text/javascript">
+	/*var drag1 = new Drag('box');
+	var drag2 = new Drag('div')*/
+	//目前而言，虽然功能实现了，但是我想修改一下，让DIV不超出边界；
+	//但是，我又不想破坏之前的代码
+	//保留之前的父级功能，并且添加自己的新功能
+	//我就新创建一个子构造函数，并且继承前面的Drag的所有方法，然后我再新增几个方法，是不是可以？
+	
+	var dg = new Ndrag('box');
+	var dg2 = new Drag('div');
+	
+	
+	
+	
+	
+	
+
+	//面向过程编程
+
+	/*var oBox = null;//盒子
+	var disX = 0;//X坐标
+	var disY = 0;//Y坐标
+	
+	
+	window.onload=function(){
+		oBox = document.getElementById("box");
+		oBox.onmousedown=fnDown;//执行鼠标按下事件
+	}
+	
+	//鼠标按下事件
+	function fnDown(e){
+		var e = e||window.e;
+		disX = e.clientX-oBox.offsetLeft;//鼠标距离盒子左边的距离
+		disY = e.clientY-oBox.offsetTop;//鼠标距离盒子上边的距离
+		document.onmousemove=fnMove;//执行鼠标移动事件
+		document.onmouseup= fnUp;//执行鼠标松开事件
+	}
+	
+	//鼠标移动事件
+	function fnMove(e){
+		var e = e||window.e;
+		oBox.style.left = e.clientX-disX+'px';//鼠标X位置-鼠标距离盒子边的距离，得出盒子距离网页边框的距离
+		oBox.style.top = e.clientY-disY+'px';
+	}
+	
+	//鼠标松开事件
+	function fnUp(){
+		document.onmousemove = null;
+		document.onmouseup = null;
+	}*/
+	
+</script>
+</html>
