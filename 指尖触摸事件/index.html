@@ -16,24 +16,31 @@
 </head>
 <body>
 	
+
 	<div class="box" id="box">
+		<input type="text" id="inp"/>
+			
+		<a href="https://www.baidu.com/">百度一下</a>
 		
 	</div>
+
 </body>
  <script type="text/javascript">
     		box.addEventListener("touchstart",function(e){
+    			e.preventDefault()
    				box.innerHTML=e.targetTouches.length;
+   				this.style.display="none"
    			})
 
-   			
-   			box.addEventListener("touchmove",function(e){
-   				box.innerHTML=e.targetTouches.length;
-   				console.log(e.targetTouches.length)
-   			})
-   		
-   		box.addEventListener("touchend",function(e){
-   				box.innerHTML=e.changedTouches.length;
-   				console.log(e.changedTouches.length)
-   			})
+// 			
+// 			box.addEventListener("touchmove",function(e){
+// 				box.innerHTML=e.targetTouches.length;
+// 				console.log(e.targetTouches.length)
+// 			})
+// 		
+// 		box.addEventListener("touchend",function(e){
+// 				box.innerHTML=e.changedTouches.length;
+// 				console.log(e.changedTouches.length)
+// 			})
     </script>
 </html>
