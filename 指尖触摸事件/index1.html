@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+       <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=no" />
+		
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			html{
+				width: 100%;
+				height: 100%;				
+			}
+			.box{
+				width: 100%;
+				height: 200px;
+				overflow: hidden;
+				position: relative;	
+			}
+			.box .b-list{
+				width: 400%;
+				height: 100%;
+				position: absolute;	
+				top: 50px;			
+			}
+			.b-list div{
+				width: 25%;
+				height: 100%;
+				float: left;
+			}
+			.b-list div:nth-child(1){
+				background: navajowhite;
+			}
+			.b-list div:nth-child(2){
+				background: violet;
+			}
+			.b-list div:nth-child(3){
+				background: tan;
+			}
+				.b-list div:nth-child(4){
+				background: mediumseagreen;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box" class="box">			
+			<div class="b-list" id="list">
+				<div>1</div>
+				<div>2</div>
+				<div>3</div>
+				<div>4</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		var wd=innerWidth;
+		var lf
+		box.addEventListener("touchstart",function(e){
+			e.preventDefault();
+			var st=e.targetTouches[0].pageX;
+			lf=list.offsetLeft;
+			box.addEventListener("touchmove",function(e){
+				var lft=e.targetTouches[0].pageX-st
+				list.style.left=lft+lf+"px";
+				
+			})
+			box.addEventListener("touchend",function(){
+				var n=Math.round(list.offsetLeft/wd)
+				list.style.left=n*wd+"px";
+				
+			})
+		})
+	</script>
+</html>
