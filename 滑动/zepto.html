@@ -75,14 +75,14 @@
 			olist.style.webkitTransform="translate3d(-"+n*25+"%,0,0)"
 			lists[n].style.webkitTransform="rotateX(360deg)"
 		})
-//		$("#box").on("tap",function(){
-//			n--
-//			if(n<0){
-//				n=0
-//			}
-//			olist.style.webkitTransform="translate3d(-"+n*25+"%,0,0)"
-//			lists[n].style.webkitTransform="rotateX(360deg)"
-//			
-//		})
+	$("#box").on("swipeRight",function(){
+			n--
+			if(n<0){
+				n=0
+			}
+			olist.style.webkitTransform="translate3d(-"+n*25+"%,0,0)"
+			lists[n].style.webkitTransform="rotateX(360deg)"
+			
+		})
 	</script>
 </html>
