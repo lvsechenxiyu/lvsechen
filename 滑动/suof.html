@@ -32,11 +32,11 @@
 		var ha=new Hammer(box)
 		ha.get("pinch").set({enable:true})
 		var n=1
-		ha.on("pinout",function(){
+		ha.on("pinchout",function(){
 			n+=0.03
 			box.style.webkitTransform="scale("+n+")"
 		})
-		ha.on("pinin",function(){
+		ha.on("pinchin",function(){
 			n-=0.03
 			box.style.webkitTransform="scale("+n+")"
 		})
