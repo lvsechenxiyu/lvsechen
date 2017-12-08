@@ -24,18 +24,23 @@
     	
     	.b-list div{
     		width: 25%;
+    		transition: all 1s;
     	}.b-list div:nth-child(1){
-    		background: magenta;
+    		background: url(img/1.png) no-repeat;
+    		background-size:cover ;    		
     	}
     	.b-list div:nth-child(2){
-    		background: violet;
+    		background: url(img/2.png) no-repeat;
+    		background-size:cover ;
     	}
     	
     	.b-list div:nth-child(3){
-    		background: thistle;
+    		background: url(img/3.png) no-repeat;
+    		background-size:cover ;
     	}
     	.b-list div:nth-child(4){
-    		background:chartreuse;
+    		background: url(img/4.png) no-repeat;
+    		background-size:cover ;
     	}
     </style>
 </head>
@@ -65,6 +70,7 @@
 				n=lists.length-1
 			}
 			olist.style.webkitTransform="translate3d(-"+n*25+"%,0,0)"
+			lists[n].style.webkitTransform="rotateX(360deg)"
 		})
 		hams.on("swiperight",function(){
 			n--
@@ -72,6 +78,8 @@
 				n=0
 			}
 			olist.style.webkitTransform="translate3d(-"+n*25+"%,0,0)"
+			lists[n].style.webkitTransform="rotateX(360deg)"
+			
 		})
 	</script>
 </html>
