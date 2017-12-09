@@ -27,7 +27,6 @@
 		
 	
 $("body").on("touchstart", function(e) {
-    e.preventDefault();
     startY = e.originalEvent.changedTouches[0].pageY;
 });
 
