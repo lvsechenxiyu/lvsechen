@@ -52,7 +52,6 @@ if  (Y<-100) {
 	var newnavlist=$("#new-nav-list").children("li")
 	$.each(newnavlist, function(v,k) {
 	newnavlist[v].addEventListener("tap",function(e){
-		e.preventDefault()
 		$(this).children().addClass("newFa")
 		$(this).siblings().children().removeClass("newFa")
 	  })		
