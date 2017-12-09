@@ -1,0 +1,51 @@
+@charset "UTF-8";
+* { margin: 0; padding: 0; font-size: 15px; list-style: none; text-decoration: none; }
+
+@font-face { font-family: 'iconfont'; src: url("../font/iconfont.eot"); src: url("../font/iconfont.eot?#iefix") format("embedded-opentype"), url("../font/iconfont.woff") format("woff"), url("../font/iconfont.ttf") format("truetype"), url("../font/iconfont.svg#iconfont") format("svg"); }
+.iconfont { font-family: "iconfont" !important; font-size: 16px; font-style: normal; -webkit-font-smoothing: antialiased; -webkit-text-stroke-width: 0.2px; -moz-osx-font-smoothing: grayscale; }
+
+html, html body { width: 100%; height: 100%; }
+html .addbodystyle { padding-top: 0px; }
+html body { box-sizing: border-box; padding-top: 3.44rem; transition: all 500ms; }
+html body header { width: 100%; height: 3.44rem; position: fixed; top: 0px; }
+html body header .logo { width: 100%; height: 1.72rem; background: url(../img/Image10.png) no-repeat; }
+html body header .new-nav { height: 50%; position: relative; }
+html body header .new-nav ul { height: 100%; width: 86.4rem; line-height: 1.72rem; position: absolute; top: 0; }
+html body header .new-nav ul li { padding: 0 0.4rem; height: 100%; float: left; text-align: center; }
+html body header .new-nav ul li a { color: #666666; font-size: 0.68rem; }
+html body header .new-nav ul li .newFa { color: blue; }
+html body header #must { position: absolute; right: 0; top: 1.72rem; z-index: 10; background: white; width: 1.6rem; height: 1.72rem; text-align: center; line-height: 1.72rem; }
+html body header #must a { display: inline-block; width: 100%; height: 100%; }
+html body .addheaderstyle { display: none; }
+
+section { width: 100%; height: 100%; background: #F9F9F9; overflow: auto; }
+section .s-head-hot { width: 100%; height: 7.76rem; position: relative; overflow: hidden; }
+section .s-head-hot ul { width: 400%; height: 100%; transition: all 1s; }
+section .s-head-hot ul li { width: 25%; float: left; }
+section .s-head-hot div { position: absolute; bottom: 1px; left: 6.32rem; }
+section .s-head-hot div span { display: inline-block; height: 4px; width: 0.4rem; background: white; }
+section .s-head-hot div .addspanstyle { background: magenta; }
+section .main { width: 96%; margin: 0 auto; }
+section .sect-sub .m-sub-hot { width: 100%; margin-top: 0.32rem; margin-bottom: 0.48rem; padding-top: 0.48rem; border-top: 1px solid #EDEDED; border-bottom: 1px solid #EDEDED; }
+section .sect-sub .sect-sub-hot .sect-sub-hotL { display: flex; }
+section .sect-sub .sect-sub-hot .sect-sub-hotL p { font-size: 0.72rem; padding-right: 0.4rem; padding-bottom: 0.6rem; }
+section .sect-sub .sect-sub-hot .source { margin-bottom: 0.48rem; }
+section .sect-sub .sect-sub-hot .source span { background: red; color: white; font-size: 0.56rem; }
+section .sect-sub .sect-sub-hot .source b { font-family: "微软雅黑"; font-weight: 200; font-size: 0.56rem; color: #9E9E9E; }
+section .weather { width: 100%; margin-top: 0.32rem; padding-top: 0.48rem; border-top: 1px solid #EDEDED; border-bottom: 1px solid #EDEDED; }
+section .weather .main { box-shadow: 5px 0px 20px 3px #A59898; }
+section .weather .weather-top { width: 100%; display: flex; justify-content: space-between; }
+section .weather .weather-top b { font-size: 0.72rem; }
+section .weather .weather-top la { background: #F0D104; color: white; font-size: 0.52rem; padding: 0px 5px; }
+section .weather .weather-top .weather-topR { color: #989898; }
+section .weather .weather-bottom { width: 100%; display: flex; justify-content: space-between; padding-top: 0.32rem; padding-bottom: 0.32rem; color: #989898; }
+section .weather .weather-bottom .weather-bottomB { color: white; background: #BFCACE; padding: 0 5px; border-radius: 0.4rem; }
+section .realTimeNew { width: 100%; margin-top: 0.32rem; padding-top: 0.48rem; border-top: 1px solid #EDEDED; border-bottom: 1px solid #EDEDED; }
+section .realTimeNew .source span { background: blue !important; }
+section .realTimeNew .LoadMore { width: 100%; padding: 0.8rem 0px; }
+section .realTimeNew .LoadMore div { width: 4rem; height: 0.8rem; color: blue; text-align: center; line-height: 0.8rem; border-radius: 10px; margin: 0 auto; border: 1px solid blue; }
+section .realTimeNew .realTime { color: blue; padding: 0.4rem 0 5px 0; }
+section .realTimeNew .realTime i { font-size: 0.88rem !important; }
+section .realTimeNew .realTime span { font-size: 12px !important; }
+
+/*# sourceMappingURL=tx.css.map */

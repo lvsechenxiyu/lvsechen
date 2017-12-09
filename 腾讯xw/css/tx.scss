@@ -1,0 +1,262 @@
+$wh:25;
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    list-style: none;
+    text-decoration: none;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font/iconfont.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../font/iconfont.woff') format('woff'),
+  url('../font/iconfont.ttf') format('truetype'),
+  url('../font/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+html{
+    width: 100%;
+    height: 100%;
+    .addbodystyle{
+        padding-top: 0px;
+       
+    }
+    body{
+        @extend html;
+        box-sizing: border-box;
+        padding-top: 86/$wh+rem;
+        transition: all 500ms;
+        header{
+            width: 100%;
+            height:86/$wh+rem ;
+            position: fixed;
+            top: 0px;          
+            .logo{
+                width: 100%;
+                 height: 43/$wh+rem;
+                 background: url(../img/Image10.png) no-repeat;
+            }
+           
+            .new-nav{
+                height: 50%;
+                position: relative;
+                ul{   
+                   height: 100%; 
+                   width: 2160/$wh+rem;
+                   line-height: 43/$wh+rem; 
+                   position: absolute; 
+                   top: 0;                           
+                    li{
+                        padding:0 10/$wh+rem ;
+                        height: 100%;
+                        float: left;
+                        text-align: center;
+
+                        a{
+                           color: #666666; 
+                        font-size: 17/$wh+rem;
+                            
+                        }
+                       .newFa{
+                           color: blue;
+                       }
+                    }
+                    
+                }
+               
+            }
+             #must{
+                    position: absolute;
+                    right: 0;
+                    top: 43/$wh+rem;
+                    z-index: 10;                   
+                    background: white;
+                    width: 40/$wh+rem;
+                    height: 43/$wh+rem;
+                    text-align: center;
+                    line-height: 43/$wh+rem;
+                    a{
+                        display: inline-block;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    
+                }
+        }
+         .addheaderstyle{
+                display: none;
+            }
+    }
+}
+
+section{
+    width: 100%;
+    height: 100%;
+    background: #F9F9F9;
+    overflow: auto;
+    .s-head-hot{
+        width: 100%;
+        height: 194/$wh+rem;
+        position: relative;
+        overflow: hidden;
+        
+        ul{
+            width: 400%;
+            height: 100%;
+            transition: all 1s; 
+            li{
+                width: 25%;
+                float: left;
+            }
+         }
+         div{
+             position: absolute;
+             bottom: 1px;
+             left: 158/$wh+rem;
+             span{
+                 display: inline-block;
+                 height: 4px;
+                 width: 10/$wh+rem;
+                 background: white;
+             }
+             .addspanstyle{
+                 background: magenta;
+             }
+             
+         }
+    }
+    
+    .main{
+        width: 96%;
+        margin: 0 auto;
+    }
+    .sect-sub{
+       
+       .m-sub-hot{
+             width: 100%;       
+            margin-top: 8/$wh+rem;
+            margin-bottom: 12/$wh+rem;
+            padding-top: 12/$wh+rem;
+            border-top: 1px solid #EDEDED; 
+            border-bottom: 1px solid #EDEDED; 
+         }
+        .sect-sub-hot{             
+             .sect-sub-hotL{
+                 display: flex;
+                 p{
+                     font-size: 18/$wh+rem;
+                     padding-right: 10/$wh+rem;
+                     padding-bottom: 15/$wh+rem;
+                 }               
+             }
+             .source{
+                 margin-bottom: 12/$wh+rem;
+                 
+               span{
+                  background: red;  
+                  color: white; 
+                  font-size: 14/$wh+rem;
+
+                  
+                 } 
+                 b{
+                     font-family: "微软雅黑";
+                     font-weight: 200;
+                  font-size: 14/$wh+rem;
+                     color: #9E9E9E;
+                 } 
+             }
+        }
+       
+    }
+    
+    .weather{
+        width: 100%;
+        margin-top: 8/$wh+rem;
+        padding-top: 12/$wh+rem;
+        border-top: 1px solid #EDEDED; 
+        border-bottom: 1px solid #EDEDED; 
+        .main{
+            box-shadow:5px 0px 20px 3px #A59898 ;
+        }
+        .weather-top{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            b{
+                font-size: 18/$wh+rem;
+            }
+            la{
+               background: #F0D104; 
+               color: white;
+               font-size: 13/$wh+rem;
+               padding: 0px 5px;
+            }
+            .weather-topR{
+                color: #989898;
+            }
+        }
+        .weather-bottom{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding-top:8/$wh+rem ;
+            padding-bottom:8/$wh+rem ;
+            color: #989898;
+            .weather-bottomB{
+                color: white;
+                background: #BFCACE;
+                padding: 0 5px;
+                border-radius: 10/$wh+rem;
+            }
+        }
+    }
+    
+    .realTimeNew{
+         width: 100%;
+        margin-top: 8/$wh+rem;
+        padding-top: 12/$wh+rem;
+        border-top: 1px solid #EDEDED; 
+        border-bottom: 1px solid #EDEDED;
+        .source{
+            span{
+                background: blue !important;
+            }
+        }
+        .LoadMore{
+            width: 100%;
+            padding: 20/$wh+rem 0px;
+            
+            div{
+                width: 100/$wh+rem;
+                height: 20/$wh+rem;
+                color: blue;
+                text-align: center;
+                line-height: 20/$wh+rem;
+                border-radius: 10px;
+                margin: 0 auto;
+                border: 1px solid blue;
+            }
+        }
+        .realTime{
+             color: blue;
+            padding: 10/$wh+rem 0 5px 0;
+            i{
+               font-size: 22/$wh+rem !important;               
+
+            }
+            span{
+               font-size: 12px!important; 
+              
+            }
+        } 
+    }
+}
+
