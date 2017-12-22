@@ -1,0 +1,125 @@
+@charset "UTF-8";
+@font-face { font-family: 'iconfont'; src: url("../font/iconfont.eot"); src: url("../font/iconfont.eot?#iefix") format("embedded-opentype"), url("../font/iconfont.woff") format("woff"), url("../font/iconfont.ttf") format("truetype"), url("../font/iconfont.svg#iconfont") format("svg"); }
+.iconfont { font-family: "iconfont" !important; font-size: 16px; font-style: normal; -webkit-font-smoothing: antialiased; -webkit-text-stroke-width: 0.2px; -moz-osx-font-smoothing: grayscale; }
+
+* { margin: 0; padding: 0; list-style: none; text-decoration: none; font-size: 0.56rem; }
+
+html, html body { width: 100%; height: 100%; }
+html body { padding-top: 2.8rem; padding-bottom: 1.6rem; box-sizing: border-box; }
+html body header { width: 100%; height: 2.8rem; background: bisque; position: fixed; z-index: 10; top: 0; }
+html body header .header-logo { width: 100%; height: 1.6rem; line-height: 1.6rem; background: url(../img/fire.jpg) no-repeat 0px -4px; background-size: cover; }
+html body header .header-logo div { float: left; }
+html body header .header-logo .logo1 { width: 4rem; height: 100%; margin-left: 4.32rem; }
+html body header .header-logo .logo { width: 1.6rem; height: 1.6rem; line-height: 1.6rem; }
+html body header .header-logo .logo img { width: 100%; height: 100%; }
+html body header .h-nav-list { height: 1.2rem; width: 100%; display: flex; justify-content: space-around; }
+html body header .h-nav-list .acolor { color: blue; padding: 0 0.6rem; background: gold; font-size: 0.6rem; }
+html body header .h-nav-list li { margin-top: 0.2rem; line-height: 0.8rem; height: 0.8rem; padding: 0 0.4rem; border-radius: 5px; color: #D45038; transition: all 500ms; }
+html body footer { width: 100%; height: 1.6rem; position: fixed; bottom: 0px; }
+html body footer .footer-nav { width: 100%; height: 100%; }
+html body footer .footer-nav .f-nav-list { width: 100%; height: 100%; display: flex; justify-content: space-around; background: #EBB254; }
+html body footer .footer-nav .f-nav-list li { padding: 0 0.4rem; height: 100%; }
+html body footer .footer-nav .f-nav-list li a { display: block; width: 100%; height: 100%; color: white; text-align: center; line-height: 1.6rem; }
+html body footer .footer-nav .f-nav-list li a i { font-size: 0.88rem; }
+
+team-content { display: block; width: 100%; height: 100%; }
+team-content .mail { width: 95%; height: 100%; margin: 0 auto; padding-top: 2rem; box-sizing: border-box; }
+team-content .mail .teamsearch { width: 100%; position: relative; }
+team-content .mail .teamsearch input { width: 80%; height: 1.2rem; outline: none; border: none; border: 1px solid #FFE4C4; padding-left: 5px; }
+team-content .mail .teamsearch span { position: absolute; top: 0.36rem; right: 2.88rem; font-size: 0.72rem; color: #EBB254; }
+team-content .mail .teamsearch button { outline: none; border: none; width: 2rem; height: 1.2rem; }
+team-content .mail .teamlist { width: 100%; height: 100%; }
+team-content .mail .teamlist ul { width: 100%; margin-top: 2rem; }
+team-content .mail .teamlist ul p { color: #EBB254; }
+team-content .mail .teamlist ul li { width: 30%; float: left; margin-left: 0.4rem; margin-top: 0.8rem; }
+team-content .mail .teamlist ul li span { display: inline-block; height: 100%; }
+team-content .mail .teamlist ul li img { width: 1.2rem; height: 1rem; border-radius: 50%; }
+
+arrange-section { width: 100%; height: 100%; display: block; background: beige; }
+arrange-section .mail { width: 95%; height: 100%; margin: 0 auto; overflow: hidden; }
+arrange-section .mail .arrangetime { width: 100%; height: 100%; box-sizing: border-box; overflow: auto; }
+arrange-section .mail .arrangetime .timelist-box { width: 100%; height: 0.8rem; position: relative; margin-top: 0.4rem; margin-bottom: 0.6rem; }
+arrange-section .mail .arrangetime .timelist-box i { display: block; position: absolute; top: 0px; }
+arrange-section .mail .arrangetime .timelist-box #timelistR { right: 2rem; }
+arrange-section .mail .arrangetime .timelist-box #timelistL { left: 2rem; }
+arrange-section .mail .arrangetime .timelist-box .timelist { width: 4rem; height: 100%; background: bisque; margin: auto; overflow: hidden; position: relative; }
+arrange-section .mail .arrangetime .timelist-box .timelist ul { width: 300%; height: 100%; overflow: hidden; margin: 0 auto; position: absolute; left: -4rem; }
+arrange-section .mail .arrangetime .timelist-box .timelist ul li { width: 4rem; float: left; text-align: center; }
+arrange-section .mail .arrangetime .team-list-arrangetime { width: 100%; position: relative; transition: all 1s; height: 100%; overflow: hidden; padding-top: 0.24rem; }
+arrange-section .mail .arrangetime .team-list-arrangetime .team-list-arrangetimebox { width: 300%; position: absolute; left: -14.24rem; }
+arrange-section .mail .arrangetime .team-list-arrangetime .team-list-arrangetimebox ul { width: 14.24rem; float: left; position: relative; margin-top: 20 25rem; }
+arrange-section .mail .arrangetime .team-list-arrangetime .team-list-arrangetimebox ul .titles { position: absolute; top: -5px; left: 40%; }
+arrange-section .mail .arrangetime .team-list-arrangetime .team-list-arrangetimebox ul li { display: flex; height: 2.4rem; justify-content: space-around; margin-top: 0.8rem; }
+arrange-section .mail .arrangetime .team-list-arrangetime .team-list-arrangetimebox ul li .team-list-arrangetimeshow { display: flex; height: 100%; justify-content: space-around; line-height: 2.4rem; }
+arrange-section .mail .arrangetime .team-list-arrangetime .team-list-arrangetimebox ul li div { height: 100%; text-align: center; width: 4rem; }
+arrange-section .mail .arrangetime .team-list-arrangetime .team-list-arrangetimebox ul li div .vs { color: #D9743C; font-size: 16px; }
+arrange-section .mail .arrangetime .team-list-arrangetime .team-list-arrangetimebox ul li div p { margin-top: 0.32rem; }
+arrange-section .mail .arrangetime .team-list-arrangetime .team-list-arrangetimebox ul li div img { width: 2rem; height: 2rem; border-radius: 50%; margin-top: 0.2rem; }
+arrange-section .mail .arrangetime .team-list-arrangetime .team-list-arrangetimebox ul li div span { margin-bottom: 0.24rem; }
+
+section { width: 100%; height: 100%; display: block; box-sizing: border-box; padding-bottom: 50px; }
+section .section-header { width: 100%; }
+section .section-header .swiper-slide { width: 100%; height: 5rem; }
+section .section-header .swiper-slide img { width: 100%; height: 100%; }
+section .section-news-list { width: 100%; overflow: hidden; }
+section .section-news-list .section-news-mail { width: 96%; margin: 0 auto; }
+section .section-news-list .section-news-mail .hotnews { width: 100%; padding-bottom: 50px; }
+section .section-news-list .section-news-mail .hotnews .hotnews-list { width: 100%; position: relative; overflow: hidden; }
+section .section-news-list .section-news-mail .hotnews .hotnews-list::before { display: block; content: ""; width: 100%; height: 1px; background: bisque; position: absolute; bottom: -10px; }
+section .section-news-list .section-news-mail .hotnews .hotnews-list h4 { width: 100%; padding: 0.8rem 0px; }
+section .section-news-list .section-news-mail .hotnews .hotnews-list .hotnews-listsb ul { display: flex; justify-content: flex-start; }
+section .section-news-list .section-news-mail .hotnews .hotnews-list .hotnews-listsb ul .hotnews-listli { float: left; width: 32%; overflow: hidden; height: 4rem; margin-left: 0.16rem; flex-shrink: 0; }
+section .section-news-list .section-news-mail .hotnews .hotnews-list .hotnews-listsb ul .hotnews-listli img { width: 100%; height: 100%; }
+section .section-news-list .section-news-mail .hotnews .hotnews-list .hotnews-listsb .hotnews-listtxt { width: 100%; box-sizing: border-box; padding: 10px 10px 0px 0px; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; }
+section .section-news-list .section-news-mail .hotnews .hotnews-list .addhotnews-listsb { display: flex; justify-content: space-around; }
+section .section-news-list .section-news-mail .hotnews .hotnews-list .addhotnews-listsb ul { flex: 1; }
+section .section-news-list .section-news-mail .hotnews .hotnews-list .addhotnews-listsb .hotnews-listtxt { flex: 2; }
+section .section-news-list .section-news-mail .hotnews .hotnews-list .hotnews-listper { width: 100%; padding: 0.2rem; display: flex; justify-content: space-between; }
+section .section-news-list .section-news-mail .hotnews .hotnews-list .hotnews-listper div { padding-right: 0.8rem; }
+
+ranking-section { display: block; width: 100%; height: 100%; }
+ranking-section .ranking-show { width: 100%; display: flex; justify-content: space-between; position: fixed; top: 2.8rem; }
+ranking-section .ranking-show div { width: 40%; height: 1.2rem; text-align: center; line-height: 1.2rem; background: gold; box-shadow: 5px 3px 6px 2px darkgray; transition: all 500ms; }
+ranking-section .ranking-show .addrangkingbg { width: 60%; background: mediumseagreen; color: white; font-size: 0.64rem; line-height: 1.4rem; height: 1.4rem; border-bottom-right-radius: 0.4rem; border-bottom-left-radius: 0.4rem; }
+ranking-section .ranking-mail { width: 96%; height: 100%; margin: 0px auto; overflow: auto; padding-bottom: 2rem; padding-top: 2.8rem; box-sizing: border-box; }
+ranking-section .ranking-mail .ranking-team { width: 100%; }
+ranking-section .ranking-mail .ranking-team .ranking-team-list { width: 100%; }
+ranking-section .ranking-mail .ranking-team .ranking-team-list .ranking-nav { position: fixed; top: 6rem; left: 0rem; }
+ranking-section .ranking-mail .ranking-team .ranking-team-list .ranking-nav div { background: gold; width: 1.48rem; margin-top: 5px; border-top-right-radius: 10px; border-bottom-right-radius: 5px; box-shadow: 2px 1px 3px 2px darkgray; }
+ranking-section .ranking-mail .ranking-team .ranking-team-list .ranking-nav .ranking-navaddbg { background: #3CB371; width: 1.72rem; padding: 3px 0px; box-shadow: 5px 3px 6px 2px darkgray; }
+ranking-section .ranking-mail .ranking-team .ranking-team-list .ranking-nav .ranking-navaddbg a { color: white; }
+ranking-section .ranking-mail .ranking-team .ranking-team-list h4 { width: 85%; padding-left: 15%; background: bisque; box-shadow: 5px 3px 6px 2px darkgray; margin-top: 10px; }
+ranking-section .ranking-mail .ranking-team .ranking-team-list .tranking { width: 100%; }
+ranking-section .ranking-mail .ranking-team .ranking-team-list .tranking .tranking-eastwest { width: 100%; display: flex; justify-content: space-around; }
+ranking-section .ranking-mail .ranking-team .ranking-team-list .tranking .tranking-eastwest div { text-align: center; padding: 0.2rem 0px; height: 1.4rem; line-height: 1.4rem; margin: 5px 0px; width: 20%; }
+ranking-section .ranking-mail .ranking-team .ranking-team-list .tranking .tranking-eastwest .ranking-personallogo { width: 4rem; display: flex; justify-content: flex-start; }
+ranking-section .ranking-mail .ranking-team .ranking-team-list .tranking .tranking-eastwest .ranking-personallogo img { width: 30px; height: 30px; }
+ranking-section .ranking-mail .ranking-team .ranking-team-list .tranking .tranking-eastwest .ranking-personallogo span { margin-left: 0.24rem; }
+ranking-section .ranking-mail .ranking-team .ranking-team-nav { display: flex; justify-content: space-around; }
+
+video-section { display: block; width: 100%; height: 100%; overflow: auto; padding-bottom: 0.8rem; box-sizing: border-box; }
+video-section .videos { height: 8.52rem; width: 100%; position: relative; }
+video-section .videos video { width: 100%; height: 100%; }
+video-section .videos .bf { display: block; width: 2.2rem; height: 2.2rem; border-radius: 50%; position: absolute; top: 28%; left: 42%; font-size: 30px; color: white; background: #514A46; text-align: center; line-height: 2.2rem; transition: transform 300ms; }
+video-section .videos .bf2 { transform: scale(0); }
+video-section .video-nav { width: 100%; height: 11.8rem; transition: all 300ms; overflow: hidden; display: flex; justify-content: space-around; flex-wrap: wrap; position: relative; box-sizing: border-box; }
+video-section .video-nav .video-mustlist { width: 100%; height: 0.8rem; position: absolute; background-image: -moz-linear-gradient(#FFD700, #3CB371); background-image: -webkit-linear-gradient(#FFD700, #3CB371); text-align: center; bottom: 0px; z-index: 10; }
+video-section .video-nav .video-list { width: 30%; margin-top: 10px; }
+video-section .video-nav .video-list .video-listsub { width: 100%; }
+video-section .video-nav .video-list .video-listsub img { width: 100%; }
+
+news-section { display: block; width: 100%; }
+news-section .new-header { width: 100%; height: 30px; line-height: 30px; background: bisque; position: fixed; top: 0px; }
+news-section .new-header div { width: 1.6rem; text-align: center; background: #A9A9A9; height: 100%; font-size: 20px; color: brown; }
+news-section .new-content { width: 100%; margin: 0 auto; background: #E8FFE8; }
+news-section .new-content .mail { width: 96%; margin: 0 auto; }
+news-section .new-content .mail .hot-news { width: 100%; padding-bottom: 2rem; }
+news-section .new-content .mail .hot-news .new-page-list { width: 100%; }
+news-section .new-content .mail .hot-news .new-page-list h4 { width: 100%; padding: 0.4rem 0px; border-bottom: 1px solid #D9743C; }
+news-section .new-content .mail .hot-news .new-page-list div { width: 100%; }
+news-section .new-content .mail .hot-news .new-page-list div p { text-indent: 2em; width: 100%; padding: 0.2rem 0px; background: #D5F3F4; color: #2F2F2F; font-family: "微软雅黑"; font-size: 15px; }
+news-section .new-content .mail .hot-news .new-page-list div .imageUrls { width: 100%; }
+news-section .new-content .mail .hot-news .new-page-list div .imageUrls div { width: 100%; height: 15.2rem; }
+news-section .new-content .mail .hot-news .new-page-list div .imageUrls div img { width: 100%; height: 100%; }
+
+/*# sourceMappingURL=header-footer-all.css.map */

@@ -1,0 +1,46 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=no" />
+    <title>new page..</title>
+    <script type="text/javascript">   	document.documentElement.style.fontSize=innerWidth/15+"px"
+    </script> 
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/header-footer-all.css"/>
+	<link rel="stylesheet" type="text/css" href="css/newspage/newspag.css"/>
+	<script src="js/json/hotnews.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/newpage/newpage.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/header-footer.js" type="text/javascript" charset="utf-8"></script>
+
+	<body>
+		<news-section>
+			<div class="new-header" >
+				<div class="iconfont" id="newsheader">&#xe605;</div>
+			</div>				
+			<div class="new-content">
+				<div class="mail" id="new-contentpage">
+						
+				</div>			
+			</div>
+			
+		</news-section>
+		<footer>
+		  <div class="footer-nav">
+			<ul class="f-nav-list">
+				<li><a href="index.html"><i class="iconfont">&#xe675;</i></a></li>
+				<li><a href="video.html"><i class="iconfont">&#xe7ac;</i></a></li>
+				<li><a href=""><i class="iconfont">&#xe73d;</i></a></li>
+				<li id="back"><a href=""><i class="iconfont">&#xe605;</i></a></li>
+				<li id="next"><a href=""><i class="iconfont">&#xe606;</i></a></li>
+			</ul>
+		</div>
+	</footer>
+	</body>
+	<script type="text/javascript">
+	$("#newsheader").bind("touchend",function(e){	
+	console.log("aaa")
+	  window.location.href="index.html"
+})
+	</script>
+</html>

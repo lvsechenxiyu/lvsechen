@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=no" />
+    <title>个人排行榜</title>
+    <script type="text/javascript">
+   	document.documentElement.style.fontSize=innerWidth/15+"px"
+    </script>    
+    <link rel="stylesheet" type="text/css" href="css/header-footer-all.css"/>
+    <script src="js/json/pm.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body>
+	<header>
+		<div class="header-logo">
+			<div class="logo">
+			  <img src="img/logo.jpg"/>				
+			</div>
+            <div class="logo1">
+            	NBA赛事
+            </div>			
+		</div>
+		<div class="header-nav" id="header-nav">
+			<ul class="h-nav-list" id="h-nav-list" >
+				<li id="new">新闻</li>
+				<li id="arrangs">赛程</li>
+				<li id="rangking" class="acolor">榜单</li>
+				<li id="newvideos">视频</li>
+				<li id="AllTeam">球队</li>
+			</ul>
+		</div>
+	</header>
+	<ranking-section>
+		<div class="ranking-show">
+				<div class="addrangkingbg">球队排名</div>
+				<div>个人排名</div>
+		</div>
+
+		<div class="ranking-mail">							
+			<div class="ranking-team">
+				<div class="ranking-team-nav">
+					<div>排名</div>
+					<div>球队</div>
+					<div>胜</div>
+					<div>负</div>
+				</div>
+				<div class="ranking-team-list">
+					<div class="ranking-nav">
+						<div class="ranking-navaddbg" ><a href="#ranking-personaleast">东部</a></div>
+						<div><a href="#ranking-personalwest">西部</a></div>
+			      </div>	
+					<div class="ranking-personaleast" id="ranking-personaleast">
+						<h4 >东部球队排行</h4>
+					</div>
+					<div class="ranking-personalwest" id="ranking-personalwest" >
+						<h4 >西部球队排行</h4>
+					</div>
+				</div>
+			</div>
+			<div class=""></div>
+			
+		</div>
+	</ranking-section>
+	<footer>
+		<div class="footer-nav">
+			<ul class="f-nav-list">
+				<li><a href="index.html"><i class="iconfont">&#xe675;</i></a></li>
+				<li><a href="video.html"><i class="iconfont">&#xe7ac;</i></a></li>
+				<li><a href=""><i class="iconfont">&#xe73d;</i></a></li>
+				<li id="back"><a href=""><i class="iconfont">&#xe605;</i></a></li>
+				<li id="next"><a href=""><i class="iconfont">&#xe606;</i></a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+    <script type="text/javascript" src="js/header-footer.js"></script>
+    <script src="js/personal/personalrankings.js" type="text/javascript" charset="utf-8"></script>
+</html>

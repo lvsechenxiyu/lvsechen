@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=no" />
+    <title>视频</title>
+    <script type="text/javascript">
+   	document.documentElement.style.fontSize=innerWidth/15+"px"
+    </script>    
+    <link rel="stylesheet" type="text/css" href="css/header-footer-all.css"/> 
+    <script src="js/json/videos.js" type="text/javascript" charset="utf-8"></script>
+    
+    <script src="js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
+
+</head>
+<body>
+	<header>
+		<div class="header-logo">
+			<div class="logo">
+			  <img src="img/logo.jpg"/>				
+			</div>
+            <div class="logo1">
+            	NBA赛事
+            </div>			
+		</div>
+		<div class="header-nav" id="header-nav">
+			<ul class="h-nav-list" id="h-nav-list" >
+				<li id="new">新闻</li>
+				<li id="arrangs">赛程</li>
+				<li id="rangking">榜单</li>
+				<li id="newvideos" class="acolor">视频</li>
+				<li id="AllTeam">球队</li>
+			</ul>
+		</div>
+	</header>
+	<video-section>
+		<div class="videos">
+			<span class="iconfont bf" id="bf">&#xe7ac;</span>
+			<video width="" height="" id="video" controls>
+				<source src="mp4/tianping.mp4" type="video/mp4"></source>			
+		当前浏览器不支持 video直接播放，点击这里下载视频： <a>下载视频</a>
+			</video>
+		</div>
+
+
+        <div id="video-nav" class="video-nav">     	
+        	<div class="video-mustlist" id="video-mustlist"><span>点击加载更多</span><span class="iconfont">&#xe66d;</span></div>
+        </div>
+	</video-section>
+	
+
+	<footer>
+		<div class="footer-nav">
+			<ul class="f-nav-list">
+				<li><a href="index.html"><i class="iconfont">&#xe675;</i></a></li>
+				<li><a href="video.html"><i class="iconfont">&#xe7ac;</i></a></li>
+				<li><a href=""><i class="iconfont">&#xe73d;</i></a></li>
+				<li id="back"><a href=""><i class="iconfont">&#xe605;</i></a></li>
+				<li id="next"><a href=""><i class="iconfont">&#xe606;</i></a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+    <script type="text/javascript" src="js/header-footer.js"></script>
+   <script src="js/video/video.js" type="text/javascript" charset="utf-8"></script>
+</html>
