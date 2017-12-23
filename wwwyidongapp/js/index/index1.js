@@ -16,13 +16,3 @@
 //		 window.location.href="newpege.html"
 // })
 //})
-	$(".hotnews-list").on("click",function(e){
-			 e.preventDefault();
-		sessionStorage.setItem("index", $(this).index());					 
-		 window.location.href="newpege.html"
-})
-window.onload=function(){	
-	if($(".hotnews-listsb1 li").length==1){
-		$(this).parent().addClass("addhotnews-listsb")
-	}
-}

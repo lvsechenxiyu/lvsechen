@@ -18,9 +18,6 @@
 			$("#bf").removeClass("bf2")		
 	});
 
-console.log(Videoss)
-console.log(videoimg)
-console.log(videotext)
 var oDiv
 for(let i=0;i<videotext.length;i++){
 	oDiv=`<div class="video-list">
@@ -36,8 +33,9 @@ $(".video-list").bind("touchend",function(e){
 })
 var flag=true
 $("#video-nav").on("click","#video-mustlist",function(){
-	let h=($(".video-list").height()+30);
-	let top=Math.ceil($(".video-list").length/3)*($(".video-list").height()+30);		
+	let h=($(".video-list").height()+10);
+	
+	let top=Math.ceil($(".video-list").length/3)*($(".video-list").height()+17);
 	if(flag==true){
 		flag=false
 	}else{
@@ -48,7 +46,7 @@ $("#video-nav").on("click","#video-mustlist",function(){
 		$("#video-nav").css({"height":top})
 	}else{
 		$(this).html("<span>点击加载更多</span><span class='iconfont'>&#xe66d;</span>")
-		$("#video-nav").css({"height":"296px"})
+		$("#video-nav").css({"height":"320px"})
 	}
 	
 })

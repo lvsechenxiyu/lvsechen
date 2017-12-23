@@ -38,18 +38,40 @@
 		<div class="videos">
 			<span class="iconfont bf" id="bf">&#xe7ac;</span>
 			<video width="" height="" id="video" controls>
-				<source src="mp4/tianping.mp4" type="video/mp4"></source>			
+				<source src="mp4/tianping.mp4" type="video/mp4">
+				</source>			
 		当前浏览器不支持 video直接播放，点击这里下载视频： <a>下载视频</a>
 			</video>
 		</div>
 
 
-        <div id="video-nav" class="video-nav">     	
-        	<div class="video-mustlist" id="video-mustlist"><span>点击加载更多</span><span class="iconfont">&#xe66d;</span></div>
+        <div id="video-nav" class="video-nav">  
+        	<div class="video-mustnav">
+	        	<div class="video-mustlist" id="video-mustlist">
+	        		<span>点击加载更多</span>
+	        		<span class="iconfont">&#xe66d;</span>
+	        	</div>
+        	</div>
         </div>
 	</video-section>
 	
-
+     <div class="commentAll">
+     	 <h4>用户评论</h4>
+     	<div class="mail">
+ 
+     			<div class="commenthot">
+				    <div class="writeMessage">
+					
+					<input id="textarea" placeholder="用户评论"></input>												 
+					<button id="btn">发送</button>
+					<div class="showMessage">
+						<p><span>小花：</span>你是傻子么</p>						
+						<p><span>小明：</span>嗯</p>
+					</div>
+				</div>
+     	  </div>
+     	</div>
+     </div>
 	<footer>
 		<div class="footer-nav">
 			<ul class="f-nav-list">
@@ -64,4 +86,5 @@
 </body>
     <script type="text/javascript" src="js/header-footer.js"></script>
    <script src="js/video/video.js" type="text/javascript" charset="utf-8"></script>
+   <script src="js/comment/comment.js" type="text/javascript" charset="utf-8"></script>
 </html>

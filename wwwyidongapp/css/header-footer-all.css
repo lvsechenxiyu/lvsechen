@@ -102,9 +102,11 @@ video-section .videos { height: 8.52rem; width: 100%; position: relative; }
 video-section .videos video { width: 100%; height: 100%; }
 video-section .videos .bf { display: block; width: 2.2rem; height: 2.2rem; border-radius: 50%; position: absolute; top: 28%; left: 42%; font-size: 30px; color: white; background: #514A46; text-align: center; line-height: 2.2rem; transition: transform 300ms; }
 video-section .videos .bf2 { transform: scale(0); }
-video-section .video-nav { width: 100%; height: 11.8rem; transition: all 300ms; overflow: hidden; display: flex; justify-content: space-around; flex-wrap: wrap; position: relative; box-sizing: border-box; }
-video-section .video-nav .video-mustlist { width: 100%; height: 0.8rem; position: absolute; background-image: -moz-linear-gradient(#FFD700, #3CB371); background-image: -webkit-linear-gradient(#FFD700, #3CB371); text-align: center; bottom: 0px; z-index: 10; }
-video-section .video-nav .video-list { width: 30%; margin-top: 10px; }
+video-section .video-nav { width: 100%; height: 12.8rem; transition: all 300ms; overflow: hidden; position: relative; box-sizing: border-box; }
+video-section .video-nav .video-mustnav { width: 100%; height: 1.2rem; position: absolute; bottom: 0px; z-index: 10; background: white; }
+video-section .video-nav .video-mustnav .video-mustlist { width: 100%; height: 0.8rem; background-image: -moz-linear-gradient(#FFD700, #3CB371); background-image: -webkit-linear-gradient(#FFD700, #3CB371); text-align: center; }
+video-section .video-nav .video-list { width: 30%; height: 5.2rem; margin-top: 10px; float: left; margin-left: 0.36rem; }
+video-section .video-nav .video-list p { width: 100%; height: 2.28rem; padding-top: 7px; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; font-size: 0.56rem; }
 video-section .video-nav .video-list .video-listsub { width: 100%; }
 video-section .video-nav .video-list .video-listsub img { width: 100%; }
 
@@ -121,5 +123,16 @@ news-section .new-content .mail .hot-news .new-page-list div p { text-indent: 2e
 news-section .new-content .mail .hot-news .new-page-list div .imageUrls { width: 100%; }
 news-section .new-content .mail .hot-news .new-page-list div .imageUrls div { width: 100%; height: 15.2rem; }
 news-section .new-content .mail .hot-news .new-page-list div .imageUrls div img { width: 100%; height: 100%; }
+
+.commentAll { width: 100%; padding-bottom: 2.4rem; box-sizing: border-box; height: 12rem; overflow: auto; }
+.commentAll h4 { width: 100%; height: 0.8rem; text-align: center; line-height: 0.8rem; background: bisque; }
+.commentAll .mail { width: 96%; margin: 0 auto; text-align: left; }
+.commentAll .mail .commenthot { width: 100%; }
+.commentAll .mail .commenthot .writeMessage { width: 100%; }
+.commentAll .mail .commenthot .writeMessage input { width: 100%; margin-top: 0.4rem; height: 2rem; background: #EEEEEE; border: none; outline: none; padding-left: 5px; }
+.commentAll .mail .commenthot .showMessage { width: 100%; }
+.commentAll .mail .commenthot .showMessage .op { padding: 0.2rem 0.4rem; background: bisque; border-radius: 5%; margin-top: 5px; color: blue; }
+.commentAll .mail .commenthot .showMessage .osp { font-size: 0.72rem; color: #FF8E0A; padding-right: 5px; }
+.commentAll .mail .commenthot .showMessage .ospan { font-size: 0.48rem; color: #FF8E0A; padding-right: 5px; }
 
 /*# sourceMappingURL=header-footer-all.css.map */
